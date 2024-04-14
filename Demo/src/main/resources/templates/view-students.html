@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns="http://www.thymeleaf.org">
+	<head><title></title></head>
+	<body>
+		<table border="1">
+			<tr>
+				<td> roll</td>
+				<td> name</td>
+				<td> marks</td>
+			</tr>
+			<tr th:each="students:${students}">
+				<td th:text="${students.roll}"></td>
+				<td th:text="${students.name}"></td>
+				<td th:text="${students.marks}"></td>
+			</tr>
+		</table>
+	</body>
+</html>
